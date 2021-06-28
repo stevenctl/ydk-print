@@ -1,6 +1,6 @@
 
-export function dataFromURL() {
-    const urlSearchParams = new URLSearchParams(window.location.search);
+export function dataFromURL(location) {
+    const urlSearchParams = new URLSearchParams(location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
     const data = params.data;
     if (!data.startsWith('data:')) {

@@ -1,10 +1,10 @@
 import './App.css';
 import React from 'react';
-import {Router, Route, Switch} from "react-router";
-import {createBrowserHistory} from "history";
+import {Router, Route, Switch, useHistory, useLocation} from "react-router";
 import {useDropzone} from 'react-dropzone'
 import {ReactComponent as UploadIcon} from './upload.svg';
 import {dataFromURL, parseYDK} from "./ydk";
+import { HashRouter } from 'react-router-dom';
 
 function onChangeHelper(setter) {
   return function (e) {
@@ -26,25 +26,26 @@ function onFileChangeHelper(deckFile, pathSetter) {
   }
 }
 
-const history = createBrowserHistory();
 
 function App() {
   return (
-      <Router history={history}>
+      <HashRouter>
         <Switch>
           <Route path="/print"><Print/></Route>
           <Route path="/ydk-print/print"><Print/></Route>
           <Route><Form/></Route>
         </Switch>
-      </Router>
+      </HashRouter>
   );
 }
 
-function onDrop(files) {
-  const r = new FileReader();
-  // eslint-disable-next-line no-restricted-globals
-  r.onload = e => location.href = '/ydk-print/print?data=' + e.target.result;
-  r.readAsDataURL(files[0]);
+function onDrop(history) {
+  return function (files) {
+    const r = new FileReader();
+    // eslint-disable-next-line no-restricted-globals
+    r.onload = e => history.push('/ydk-print/print?data=' + e.target.result);
+    r.readAsDataURL(files[0]);
+  }
 }
 
 function Form() {
@@ -62,7 +63,8 @@ function Form() {
 }
 
 function Dropzone({children}) {
-  const {getRootProps, getInputProps} = useDropzone({onDrop})
+  const history = useHistory();
+  const {getRootProps, getInputProps} = useDropzone({onDrop: onDrop(history)})
 
   return <div {...getRootProps()}>
     <input {...getInputProps()} />
@@ -71,7 +73,8 @@ function Dropzone({children}) {
 }
 
 function Print() {
-  const cards = parseYDK(dataFromURL());
+  const location = useLocation();
+  const cards = parseYDK(dataFromURL(location));
   const pages = [];
   for (let i = 0; i < cards.length; i+=9) {
     pages.push(cards.slice(i, i + 9))
