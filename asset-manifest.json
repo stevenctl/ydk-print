@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/ydk-print/static/css/main.984ca304.chunk.css",
-    "main.js": "/ydk-print/static/js/main.83370435.chunk.js",
-    "main.js.map": "/ydk-print/static/js/main.83370435.chunk.js.map",
+    "main.js": "/ydk-print/static/js/main.3b904488.chunk.js",
+    "main.js.map": "/ydk-print/static/js/main.3b904488.chunk.js.map",
     "runtime-main.js": "/ydk-print/static/js/runtime-main.a5679f1f.js",
     "runtime-main.js.map": "/ydk-print/static/js/runtime-main.a5679f1f.js.map",
-    "static/js/2.929279a6.chunk.js": "/ydk-print/static/js/2.929279a6.chunk.js",
-    "static/js/2.929279a6.chunk.js.map": "/ydk-print/static/js/2.929279a6.chunk.js.map",
+    "static/js/2.58866d40.chunk.js": "/ydk-print/static/js/2.58866d40.chunk.js",
+    "static/js/2.58866d40.chunk.js.map": "/ydk-print/static/js/2.58866d40.chunk.js.map",
     "index.html": "/ydk-print/index.html",
     "static/css/main.984ca304.chunk.css.map": "/ydk-print/static/css/main.984ca304.chunk.css.map",
-    "static/js/2.929279a6.chunk.js.LICENSE.txt": "/ydk-print/static/js/2.929279a6.chunk.js.LICENSE.txt",
+    "static/js/2.58866d40.chunk.js.LICENSE.txt": "/ydk-print/static/js/2.58866d40.chunk.js.LICENSE.txt",
     "static/media/upload.05f219ce.svg": "/ydk-print/static/media/upload.05f219ce.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a5679f1f.js",
-    "static/js/2.929279a6.chunk.js",
+    "static/js/2.58866d40.chunk.js",
     "static/css/main.984ca304.chunk.css",
-    "static/js/main.83370435.chunk.js"
+    "static/js/main.3b904488.chunk.js"
   ]
 }
