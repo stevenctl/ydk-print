@@ -33,6 +33,7 @@ function App() {
       <Router history={history}>
         <Switch>
           <Route path="/print"><Print/></Route>
+          <Route path="/ydk-print/print"><Print/></Route>
           <Route><Form/></Route>
         </Switch>
       </Router>
@@ -42,7 +43,7 @@ function App() {
 function onDrop(files) {
   const r = new FileReader();
   // eslint-disable-next-line no-restricted-globals
-  r.onload = e => location.href = '/print?data=' + e.target.result;
+  r.onload = e => location.href = '/ydk-print/print?data=' + e.target.result;
   r.readAsDataURL(files[0]);
 }
 
