@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/stevenctl.github.io/ydk-print/static/css/main.984ca304.chunk.css",
-    "main.js": "/stevenctl.github.io/ydk-print/static/js/main.1f7ec96a.chunk.js",
-    "main.js.map": "/stevenctl.github.io/ydk-print/static/js/main.1f7ec96a.chunk.js.map",
-    "runtime-main.js": "/stevenctl.github.io/ydk-print/static/js/runtime-main.ba529399.js",
-    "runtime-main.js.map": "/stevenctl.github.io/ydk-print/static/js/runtime-main.ba529399.js.map",
-    "static/js/2.9777ec70.chunk.js": "/stevenctl.github.io/ydk-print/static/js/2.9777ec70.chunk.js",
-    "static/js/2.9777ec70.chunk.js.map": "/stevenctl.github.io/ydk-print/static/js/2.9777ec70.chunk.js.map",
-    "index.html": "/stevenctl.github.io/ydk-print/index.html",
-    "static/css/main.984ca304.chunk.css.map": "/stevenctl.github.io/ydk-print/static/css/main.984ca304.chunk.css.map",
-    "static/js/2.9777ec70.chunk.js.LICENSE.txt": "/stevenctl.github.io/ydk-print/static/js/2.9777ec70.chunk.js.LICENSE.txt",
-    "static/media/upload.05f219ce.svg": "/stevenctl.github.io/ydk-print/static/media/upload.05f219ce.svg"
+    "main.css": "/ydk-print/static/css/main.984ca304.chunk.css",
+    "main.js": "/ydk-print/static/js/main.1f7ec96a.chunk.js",
+    "main.js.map": "/ydk-print/static/js/main.1f7ec96a.chunk.js.map",
+    "runtime-main.js": "/ydk-print/static/js/runtime-main.a5679f1f.js",
+    "runtime-main.js.map": "/ydk-print/static/js/runtime-main.a5679f1f.js.map",
+    "static/js/2.9777ec70.chunk.js": "/ydk-print/static/js/2.9777ec70.chunk.js",
+    "static/js/2.9777ec70.chunk.js.map": "/ydk-print/static/js/2.9777ec70.chunk.js.map",
+    "index.html": "/ydk-print/index.html",
+    "static/css/main.984ca304.chunk.css.map": "/ydk-print/static/css/main.984ca304.chunk.css.map",
+    "static/js/2.9777ec70.chunk.js.LICENSE.txt": "/ydk-print/static/js/2.9777ec70.chunk.js.LICENSE.txt",
+    "static/media/upload.05f219ce.svg": "/ydk-print/static/media/upload.05f219ce.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba529399.js",
+    "static/js/runtime-main.a5679f1f.js",
     "static/js/2.9777ec70.chunk.js",
     "static/css/main.984ca304.chunk.css",
     "static/js/main.1f7ec96a.chunk.js"
